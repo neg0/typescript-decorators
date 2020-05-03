@@ -1,0 +1,16 @@
+version: "3"
+services:
+  node:
+    image: node:12-alpine
+    container_name: node_ts_decorators
+    volumes:
+      - ../:/var/local/project/decorators
+    working_dir: /var/local/project/decorators
+    restart: on-failure
+    ports:
+      - 8992:8992
+    networks:
+      default_ts_decorators
+
+networks:
+  default_ts_decorators:

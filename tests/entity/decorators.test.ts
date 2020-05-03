@@ -10,7 +10,7 @@ describe('Decorators', () => {
 
         it('should be instantiable', () => {
             expect(sut).toBeInstanceOf(DecoratorMockEntity)
+            expect(sut.doNothing('hadi')).toEqual('hadi')
         })
-
     })
 })

@@ -1,3 +1,5 @@
+import { Entity, Field, Route } from './entity/decorators'
+
 @Entity
 export default class Business {
     @Field
@@ -13,5 +15,9 @@ export default class Business {
         this.id = id
         this.name = name
         this.email = email
+    }
+
+    public static toString(): string {
+        return '';
     }
 }

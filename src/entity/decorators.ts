@@ -1,15 +1,17 @@
+import 'reflect-metadata'
+
 export const Entity: ClassDecorator = <TFunction extends Function>(
     target: TFunction,
 ): TFunction | void => {
-    console.log('target is:', target)
+    console.log('Entity Decorator::target is:', target)
 }
 
 export const Field: PropertyDecorator = (
     target: Object,
     propertyKey: string | symbol,
 ): void => {
-    console.log('target is:', target)
-    console.log('property key:', propertyKey)
+    console.log('Field Decorator::target is:', target)
+    console.log('Field Decorator::property key:', propertyKey)
 }
 
 export const Required: ParameterDecorator = (
@@ -17,9 +19,9 @@ export const Required: ParameterDecorator = (
     propertyKey: string | symbol,
     parameterIndex: number,
 ): void => {
-    console.log('target is:', target)
-    console.log('property key is:', propertyKey)
-    console.log('parameter index:', parameterIndex)
+    console.log('Required Decorator::target is:', target)
+    console.log('Required Decorator::property key is:', propertyKey)
+    console.log('Required Decorator::parameter index:', parameterIndex)
 }
 
 export const Route: MethodDecorator = <T>(
@@ -27,7 +29,9 @@ export const Route: MethodDecorator = <T>(
     propertyKey: string | symbol,
     descriptor: TypedPropertyDescriptor<T>,
 ): TypedPropertyDescriptor<T> | void => {
-    console.log('target is:', target)
-    console.log('property key:', propertyKey)
-    console.log('descriptor:', descriptor)
+    console.log('Route Decorator::target is:', target)
+    console.log('Route Decorator::property key:', propertyKey)
+    console.log('Route Decorator::descriptor:', descriptor)
+
+    return descriptor
 }
