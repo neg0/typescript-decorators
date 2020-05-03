@@ -1,0 +1,1 @@
+// "Silence is a source of Great Strength." ― Lao Tzu
