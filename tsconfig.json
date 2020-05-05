@@ -1,8 +1,9 @@
 {
     "compilerOptions": {
       "outDir": "dist",
-      "module": "commonjs",
-      "target": "es6",
+      "module": "CommonJS",
+      "target": "ES5",
+      "inlineSourceMap": true,
       "typeRoots": [
         "node_modules/@types",
         "src/types"

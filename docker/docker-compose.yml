@@ -7,10 +7,11 @@ services:
       - ../:/var/local/project/decorators
     working_dir: /var/local/project/decorators
     restart: on-failure
+    tty: true
     ports:
       - 8992:8992
     networks:
-      default_ts_decorators
+      default_ts_decorators:
 
 networks:
   default_ts_decorators:

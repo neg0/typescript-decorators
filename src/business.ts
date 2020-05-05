@@ -1,4 +1,4 @@
-import { Entity, Field, Route } from './entity/decorators'
+import { Entity, Field } from './entity/decorators'
 
 @Entity
 export default class Business {
