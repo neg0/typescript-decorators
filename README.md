@@ -32,4 +32,3 @@ The fifth decorator could be called _Configurable_ that accepts arguments and th
 * [A Gentle Introduction to TypeScript Decorators](https://medium.com/iqoqo-engineering/understand-typescript-decorators-in-5-minutes-26ffc6189082)
 * [TypeScript - Class Decorators](https://www.logicbig.com/tutorials/misc/typescript/class-decorators.html)
 * [TypeScript Decorators Examples](https://gist.github.com/remojansen/16c661a7afd68e22ac6e)
-* 

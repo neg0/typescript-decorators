@@ -1,8 +1,13 @@
 {
     "compilerOptions": {
       "outDir": "dist",
-      "module": "CommonJS",
-      "target": "ES5",
+      "module": "ES6",
+      "target": "ES6",
+      "lib": [
+        "ES5",
+        "ESNext"
+      ],
+      "moduleResolution": "Node",
       "inlineSourceMap": true,
       "typeRoots": [
         "node_modules/@types",
